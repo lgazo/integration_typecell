@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <!--
+    SPDX-FileCopyrightText: Ladislav Gazo <gazo@seges.sk>
+    SPDX-License-Identifier: CC0-1.0
+    -->
+    <id>integration_typecell</id>
+    <name>Type Cell</name>
+    <summary>TypeCell is a fresh take on what documents and software can look like. Think Notion + Jupyter Notebooks</summary>
+    <description><![CDATA[Break-free from your tools with hackable software
+Why can&#x27;t we easily insert interactive elements like charts, maps or anything else you can think of into our documents? Modern software is incredibly powerful. But as users, we&#x27;re limited by the use-cases envisioned by its creators.
+
+Hackable, or Malleable software, puts users in control by making tools customizable with End-User Programming.
+
+Use TypeCell to create and share your knowledge base of live, interactive documents. With Code Blocks, you always have a powerful programming environment at your fingertips.]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="gazo@seges.sk" >Ladislav Gazo</author>
+    <namespace>TypeCell</namespace>
+    <category>integration</category>
+    <category>office</category>
+    <category>social</category>
+    <category>tools</category>
+    <website>https://github.com/lgazo/integration_typecell/</website>
+    <bugs>https://github.com/lgazo/integration_typecell/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="27" max-version="27"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>Collab</name>
+            <route>integration_typecell.page.index</route>
+        </navigation>
+    </navigations>
+</info>

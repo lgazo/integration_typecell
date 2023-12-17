@@ -61,3 +61,18 @@ npm run watch
 ```
 
 Everytime the `mutagen` copies the build, clean the cache (e.g. CloudFlare).
+
+# Attempt to export Editor as library
+
+## Produce a build
+
+From `TypeCell` repo root:
+
+```bash
+export MODE=development
+npm run build:react
+```
+
+Resources:
+
+* https://vitejs.dev/guide/env-and-mode#modes

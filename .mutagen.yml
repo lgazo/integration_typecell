@@ -23,4 +23,6 @@ sync:
         - "vendor"
         - ".github"
         - ".git"
+        - ".mutagen.env"
+        - "mutagen.bash"
 

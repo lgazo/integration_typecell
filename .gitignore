@@ -8,5 +8,5 @@
 /vendor/
 js/*hot-update.*
 node_modules/
-mutagen.bash
+.mutagen.env
 js/

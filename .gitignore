@@ -10,3 +10,4 @@ js/*hot-update.*
 node_modules/
 .mutagen.yml
 mutagen.bash
+js/

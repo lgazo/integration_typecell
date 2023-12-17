@@ -110,7 +110,7 @@ export default {
 	 */
 	async mounted() {
 		try {
-			const response = await axios.get(generateUrl('/apps/typecell/notes'))
+			const response = await axios.get(generateUrl('/apps/integration_typecell/notes'))
 			this.notes = response.data
 		} catch (e) {
 			console.error(e)
@@ -176,7 +176,7 @@ export default {
 		async createNote(note) {
 			this.updating = true
 			try {
-				const response = await axios.post(generateUrl('/apps/typecell/notes'), note)
+				const response = await axios.post(generateUrl('/apps/integration_typecell/notes'), note)
 				const index = this.notes.findIndex((match) => match.id === this.currentNoteId)
 				this.$set(this.notes, index, response.data)
 				this.currentNoteId = response.data.id
@@ -193,7 +193,7 @@ export default {
 		async updateNote(note) {
 			this.updating = true
 			try {
-				await axios.put(generateUrl(`/apps/typecell/notes/${note.id}`), note)
+				await axios.put(generateUrl(`/apps/integration_typecell/notes/${note.id}`), note)
 			} catch (e) {
 				console.error(e)
 				showError(t('notestutorial', 'Could not update the note'))
@@ -206,7 +206,7 @@ export default {
 		 */
 		async deleteNote(note) {
 			try {
-				await axios.delete(generateUrl(`/apps/typecell/notes/${note.id}`))
+				await axios.delete(generateUrl(`/apps/integration_typecell/notes/${note.id}`))
 				this.notes.splice(this.notes.indexOf(note), 1)
 				if (this.currentNoteId === note.id) {
 					this.currentNoteId = null

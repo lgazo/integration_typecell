@@ -12,7 +12,7 @@ use OCP\AppFramework\Bootstrap\IBootstrap;
 use OCP\AppFramework\Bootstrap\IRegistrationContext;
 
 class Application extends App implements IBootstrap {
-	public const APP_ID = 'typecell';
+	public const APP_ID = 'integration_typecell';
 
 	public function __construct() {
 		parent::__construct(self::APP_ID);

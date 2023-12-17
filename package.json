@@ -1,5 +1,5 @@
 {
-  "name": "typecell",
+  "name": "integration_typecell",
   "description": "TypeCell is a fresh take on what documents and software can look like. Think Notion + Jupyter Notebooks",
   "version": "0.0.1",
   "author": "Ladislav Gazo <gazo@seges.sk>",
@@ -20,10 +20,13 @@
     "stylelint:fix": "stylelint css/*.css css/*.scss src/**/*.scss src/**/*.vue --fix"
   },
   "dependencies": {
+    "@nextcloud/auth": "^2.2.1",
     "@nextcloud/axios": "^1.10.0",
     "@nextcloud/dialogs": "^3.1.4",
     "@nextcloud/router": "^2.0.0",
     "@nextcloud/vue": "^5.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "vue": "^2.7.0"
   },
   "browserslist": [

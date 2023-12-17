@@ -1,5 +1,5 @@
 {
-	"name": "nextcloud/typecell",
+	"name": "typecellos/integration_typecell",
 	"description": "TypeCell is a fresh take on what documents and software can look like. Think Notion + Jupyter Notebooks",
 	"type": "project",
 	"license": "AGPL-3.0-or-later",

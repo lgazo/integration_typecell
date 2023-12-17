@@ -1,0 +1,26 @@
+sync:
+  defaults:
+    mode: "one-way-safe"
+    permissions:
+#      defaultOwner: 33
+#      defaultGroup: "tape"
+      defaultFileMode: 0664
+      defaultDirectoryMode: 0775
+      
+    ignore:
+      vcs: true
+      paths:
+        - "node_modules"
+        - ".idea"
+        - ".vscode"
+        - ".husky"
+        - ".DS_Store"
+        - "build"
+        - "coverage"
+        - "junit.xml"
+        - ".eslintcache"
+        - "cdk.out"
+        - "vendor"
+        - ".github"
+        - ".git"
+
